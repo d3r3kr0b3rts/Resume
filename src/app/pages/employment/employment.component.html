@@ -1,1 +1,26 @@
-<p>employment works!</p>
+<div *ngFor="let job of history | keyvalue; let i = index" class="py-3 border-info" [ngClass]="{'border-1, border-bottom': i < len}">
+  <div *ngFor="let entry of job.value | keyvalue;">
+    <ng-container *ngIf="!isArray(entry.value)">
+      <div class="row">
+        <div class="div col-5 col-sm-3 text-end">
+          {{entry.key}} :
+        </div>
+        <div class="div col-7 col-sm-9">
+          {{entry.value}}
+        </div>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="isArray(entry.value)">
+      <div class="row">
+        <div class="col-5 col-sm-3 text-end">
+          {{entry.key}} :
+        </div>
+        <div class="col-7 col-sm-9">
+          <ul>
+            <li *ngFor="let row of entry.value | keyvalue;">{{row.value}}</li>
+          </ul>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

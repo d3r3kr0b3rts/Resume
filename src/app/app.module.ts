@@ -14,6 +14,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { AngularDeviceInformationService } from 'angular-device-information';
 import { EducationComponent } from './pages/education/education.component';
 import { EmploymentComponent } from './pages/employment/employment.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { EmploymentComponent } from './pages/employment/employment.component';
     ProfileComponent,
     ErrorComponent,
     EducationComponent,
-    EmploymentComponent
+    EmploymentComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
