@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { AngularDeviceInformationService } from 'angular-device-information';
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  desktop:any = [];
+
+  constructor(private deviceInformationService: AngularDeviceInformationService) {
+
+    this.desktop = deviceInformationService;
+
+    
+  }
 }

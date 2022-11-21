@@ -1,9 +1,12 @@
-a{
-  font-weight: bold;
-}
 .navbar-brand{
   font-size: x-large;
 }
 .nav-link{
   font-size: large;   
+  font-weight: bolder;
+}
+.active{
+  background-color: #212529;
+  color: #0dcaf0 !important;
+  border-radius: .25rem;
 }

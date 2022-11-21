@@ -1,1 +1,7 @@
-<p>home works!</p>
+<pre> 
+  <code>
+     {{ desktop | json }}
+  </code>
+</pre>
+<p>{{desktop.deviceInfo.userAgent}}</p>
+<p *ngFor="let item of desktop.deviceInfo | keyvalue">{{item.key}} : {{item.value}}</p>

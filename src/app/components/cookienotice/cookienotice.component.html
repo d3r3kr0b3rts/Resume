@@ -1,4 +1,4 @@
-<div class="alert alert-warning text-center" [hidden]="displayNotification">
+<div class="alert alert-warning text-center fw-bold" *ngIf="cookieNotice == undefined">
   {{message}}
-  <button type="button" class="btn-close float-end" aria-label="Close" (click)="closeNotification()"></button>
+  <button class="btn btn-close float-end" (click)="close()"></button>
 </div>
