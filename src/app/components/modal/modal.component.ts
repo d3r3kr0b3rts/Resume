@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router,NavigationEnd  } from '@angular/router';
+import { DeviceinfoComponent } from 'src/app/services/deviceinfo/deviceinfo.component';
 
 @Component({
   selector: 'app-modal',
@@ -10,11 +10,19 @@ export class ModalComponent {
 
   page:string = '';
   code:string = '';
+  description: string = '';
+  btntxt:string = 'Page';
+
+
 
   renderModal(){
     this.page = window.location.pathname.slice(1);
     this.page = this.page.charAt(0).toUpperCase() + this.page.slice(1)
-    if(this.page == 'Profile'){
+    if(this.page == ''){
+      this.page = 'Home';
+      this.description = 'Client User Agent converted to a JSON string.';
+    }else if(this.page == 'Profile'){
+      this.description = 'Bootstrap Carousel element.';
       this.code = `
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade my-3" data-bs-ride="carousel">
           <div>
@@ -46,6 +54,7 @@ export class ModalComponent {
         </div>
       `;
     }else if(this.page == 'Employment'){
+      this.description = 'Employment object looped through with ngfor, ngif and ngclass.';
       this.code = `
       <div *ngFor="let job of history | keyvalue; let i = index" class="py-3 border-info" [ngClass]="{'border-1, border-bottom': i < len}">
         <div *ngFor="let entry of job.value | keyvalue;">

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalComponent } from 'src/app/components/modal/modal.component';
 
-import { AngularDeviceInformationService } from 'angular-device-information';
 
 
 @Component({
@@ -10,12 +10,4 @@ import { AngularDeviceInformationService } from 'angular-device-information';
 })
 export class HomeComponent {
 
-  desktop:any = [];
-
-  constructor(private deviceInformationService: AngularDeviceInformationService) {
-
-    this.desktop = deviceInformationService;
-
-    
-  }
 }

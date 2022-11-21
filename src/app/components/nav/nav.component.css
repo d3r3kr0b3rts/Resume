@@ -4,6 +4,8 @@
 .nav-link{
   font-size: large;   
   font-weight: bolder;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
 }
 .active{
   background-color: #212529;

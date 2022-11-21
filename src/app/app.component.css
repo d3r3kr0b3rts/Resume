@@ -2,3 +2,7 @@
   max-width: 720px;
   min-height: 90vh;
 }
+.container-fluid{
+  padding-top: 2vh;
+  min-height: 25vh;
+}

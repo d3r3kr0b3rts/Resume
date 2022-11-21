@@ -15,6 +15,7 @@ import { AngularDeviceInformationService } from 'angular-device-information';
 import { EducationComponent } from './pages/education/education.component';
 import { EmploymentComponent } from './pages/employment/employment.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { DeviceinfoComponent } from './services/deviceinfo/deviceinfo.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { ModalComponent } from './components/modal/modal.component';
     ErrorComponent,
     EducationComponent,
     EmploymentComponent,
-    ModalComponent
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
