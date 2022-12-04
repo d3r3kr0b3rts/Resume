@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
-import { DeviceinfoComponent } from 'src/app/services/deviceinfo/deviceinfo.component';
 
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })
-export class ModalComponent {
+export class ModalComponent  {
 
   page:string = '';
   code:string = '';
   description: string = '';
   btntxt:string = 'Page';
-
-
 
   renderModal(){
     this.page = window.location.pathname.slice(1);
