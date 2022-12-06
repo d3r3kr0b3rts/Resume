@@ -8,19 +8,19 @@ import { Component } from '@angular/core';
 export class EmploymentComponent {
 
   history = {
-    0: {
+    'a': {
       Employer: 'Independent Contractor',
       Date: '2019 - Present',
       Responsibilities: ['Automotive Repair', 'Residential Maintenance', 'PC Repair', 'Web Development']
     },
-    1: {
+    'b': {
       Employer: 'Crump Communications LLC',
       Location: 'Muskegon, MI',
       Date: '2018-2019',
       Position: 'Service Installer',
       Responsibilities: ['Installation of WiFi networks and NAT security camera systems.', 'Troublshooting networked devices on local networks']
     },
-    2: {
+    'c': {
       Employer: 'MOKA',
       Location: 'Muskegon, MI',
       Date: '2016 - 2018',
@@ -34,7 +34,7 @@ export class EmploymentComponent {
         'Ensure comprehensive documentation of program activities.'
       ]
     },
-    3: {
+    'd': {
       Employer: 'Hickman Assembly LLC',
       Location: 'Logan, OH',
       Date: '2012 - 2018',
@@ -46,43 +46,43 @@ export class EmploymentComponent {
         'Hire and train Assembly Technicians.'
       ]
     },
-    4: {
+    'e': {
       Employer: 'Mills Landscaping',
       Location: 'Spring Lake, MI',
       Date: '2008 - 2012',
       Position: 'Landscaper'
     },
-    5: {
+    'f': {
       Employer: 'Red Cab Co',
       Location: 'Chicago, IL',
       Date: '2008',
       Position: 'Taxi Driver'
     },
-    6: {
+    'g': {
       Employer: 'Get-A-Grip Cycles',
       Location: 'Chicago, IL',
       Date: '2007 - 2008',
       Position: 'Mechanic, Customer Service'
     },
-    7: {
+    'h': {
       Employer: 'Speedway SuperAmerica',
       Location: 'Buffalo Grove, IL',
       Date: '2007',
       Position: 'Cashier'
     },
-    8: {
+    'i': {
       Employer: 'Timber-lee Christian Centers',
       Location: 'East Troy, WI',
       Date: '2004 - 2007',
       Position: 'Cabin Counselor, Activities Instructor'
     },
-    9: {
+    'j': {
       Employer: 'Breakaway Bicycles',
       Location: 'Muskegon, MI',
       Date: '1998 - 2003',
       Position: 'Mechanic, Customer Service'
     },
-    10: {
+    'k': {
       Employer: 'Orchard Market',
       Location: 'Spring Lake, MI',
       Date: '1996 - 1998',
