@@ -1,6 +1,9 @@
+<div class="row text-center">
+  <h3>Employment History</h3>
+</div>
 <div *ngFor="let job of history | keyvalue; let i = index" class="py-3 border-info" [ngClass]="{'border-1, border-bottom': i < len}">
   <div *ngFor="let entry of job.value | keyvalue;">
-    <ng-container *ngIf="!isArray(entry.value)">
+    <ng-container *ngIf='!isArray(entry.value)'>
       <div class="row">
         <div class="div col-5 col-sm-3 text-end">
           {{entry.key}} :

@@ -7,10 +7,6 @@ import { Component } from '@angular/core';
 })
 export class EmploymentComponent {
 
-  isArray(obj : any ) {
-    return Array.isArray(obj)
-  }
-
   history = {
     0: {
       Employer: 'Independent Contractor',
@@ -97,5 +93,7 @@ export class EmploymentComponent {
 
   len = Object.keys(this.history).length - 1;
 
-
+  isArray(obj : any ) {
+    return Array.isArray(obj)
+  }
 }

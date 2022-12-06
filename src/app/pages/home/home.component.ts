@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ModalComponent } from 'src/app/components/modal/modal.component';
 
 
 

@@ -1,12 +1,32 @@
-<div class="row d-flex justify-content-center">
+<div class="row text-center">
+  <h3>Formal Education</h3>
+</div>
+<div class="row py-3">
+  <div class="col-auto">
+    <p>
+      Spring Lake High School<br>
+      1997 - 2000<br>
+      GED Grand Haven Public Schools 2001
+    </p>
+  </div>
+</div>
+<div class="row py-3">
+  <div class="col-auto">
+    <p>
+      Trinity International University<br>
+      2003 - 2006<br>
+      Biblical Studies, Philosophy, Greek
+    </p>
+  </div>
+</div>
+<div class="row text-center">
+  <h3>Independent Learning &<br>Continuing Education</h3>
+</div>
+<div class="row py-3 d-flex justify-content-center">
   <div class="col-auto">
     <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-      <a href="https://www.edx.org/learn/computer-programming" target="_blank" class="btn btn-primary">
-        Harvard edX Computer Science
-        <i class="bi bi-box-arrow-right"></i>
-      </a>
-      <a href="https://ocw.mit.edu/search/?q=computer%20science" target="_blank" class="btn btn-primary align-middle">
-        MIT OpenCourseware
+      <a *ngFor="let link of links| keyvalue;" href="{{link.value}}" target="_blank" class="btn btn-primary">
+        {{link.key}}
         <i class="bi bi-box-arrow-right"></i>
       </a>
     </div>
